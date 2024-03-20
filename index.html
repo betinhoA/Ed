@@ -196,23 +196,23 @@
         <div class="prof"><img src="imagem/ed.png" alt=""></div>
         <p> O melhor de Educa&ccedil;&atilde;o d&aacute;-se aqui!</p>
         <section>
-            <h2>Envie sua Sugestão</h2>
-            <form action="sugestao.php" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required><br>
-                <label for="pais">País:</label>
-                <input type="text" id="pais" name="pais" required><br>
-                <label for="provincia">Província:</label>
-                <input type="text" id="provincia" name="provincia" required><br>
-                <label for="idade">Idade:</label>
-                <input type="number" id="idade" name="idade" required><br>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
+    <h2>Envie sua Sugestão</h2>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required><br>
+        <label for="provincia">Província:</label>
+        <input type="text" id="provincia" name="provincia" required><br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required><br>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</section>
     </main>
     <footer>
         <div class="footer-corpo">
@@ -232,5 +232,30 @@
             &copy;Educa&ccedil;&atilde;o  Mz 24.
         </div>
     </footer>
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $pais = $_POST['pais'];
+    $provincia = $_POST['provincia'];
+    $idade = $_POST['idade'];
+    $mensagem = $_POST['mensagem'];
+    
+    $para = "betinhoalbertodossantos625@gmail.com"; // Seu endereço de e-mail
+    $assunto = "Nova sugestão recebida";
+    $corpo = "Nome: $nome\n";
+    $corpo .= "E-mail: $email\n";
+    $corpo .= "País: $pais\n";
+    $corpo .= "Província: $provincia\n";
+    $corpo .= "Idade: $idade anos\n";
+    $corpo .= "Mensagem: $mensagem\n";
+    
+    // Enviar e-mail
+    mail($para, $assunto, $corpo);
+    
+    // Redirecionar de volta para a página de contato
+    header("Location: index.html");
+}
+?>
 </body>
 </html>
