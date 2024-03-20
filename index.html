@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Betinho Alberto Dos Santos">
+    <meta name="desription" content="Educa&ccedil;&atilde;o Mz &eacute; uma empresa independente que proporciona o ensino de forma mais pr&aacute;tica para todos.">
+    <link rel="icon" type="imagem/jpg"   href="imagem/logo (2).png">
+    <title style="font-family: Roboto;">Educa&ccedil;&atilde;o Mz</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: serif;
+        }
+        @keyframes animacao2 {
+            0% {
+                margin-left: 0px;
+            }
+            25% {
+                margin-left: 80%;
+            }
+        }
+        nav .logo img {
+            animation: animacao2 5s linear 1s 1 alternate;
+            width: 20%;
+            height: auto;
+            margin-left: 40%;
+            margin-top: 10px;
+        }
+        @keyframes animacao {
+            0% {
+                color: blue;
+            }
+            25% {
+                color: lightblue;
+                font-size: 20px;
+            }
+            75% {
+                color: green;
+                font: 25px;
+            }
+        }
+        nav h1 {
+            animation: animacao 2s linear 7s 1 alternate;
+            color: blue;
+            font-family: Roboto;
+            text-align: center;
+        }
+        .nav-bar a{
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .nav-bar > ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-bar > ul > li > a {
+            padding: 10px;
+            background: green;
+        }
+        .nav-bar > ul > li > a:hover {
+            background: blue;
+            color: white;
+        }
+        .nav-bar .active {
+            background-color: blue;
+            color: white;
+        }
+        .nav-bar li {
+            border: 1px solid lightblue;
+        }
+        .nav-bar li:last-child {
+            border-bottom: none;
+        }
+        main {
+            flex: 1 0 auto;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .prof img {
+            width: 40%;
+            height: auto;
+        }
+        section {
+            padding: 20px;
+            padding-left: 0px;
+        }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+        footer {
+            color: blue;
+            background: lightblue;
+            position: relative; /* positiona os direitos autores por baixo */
+            font-size: 80%;
+            text-align: center;
+        }
+        .footer-copyright {
+            width: 100%;
+            height: 40px;
+            background: black;
+            color: white;
+            /* posiciona os direitos autorais por baixo do roda pe */
+            padding: 10px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        .footer-corpo ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+        .footer-corpo li {
+            display: inline;
+        }
+        .footer-corpo li > a {
+            color: white;
+            text-decoration: none;
+            margin-bottom: 7px;
+        }
+        .footer-corpo li a img {
+            width: 30px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imagem/logo (2).png" alt="logo">
+            </div>
+            <h1> Educac&atilde;o Mz</h1>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="index.html" class="active">In&iacute;cio</a></li>
+                    <li><a href="ensino primario.html">Ensino prim&aacute;rio</a></li>
+                    <li><a href="ensino secundario.html">Ensino secund&aacute;rio</a></li>
+                    <li><a href="ensino a distancia.html">Ensino a dist&acirc;ncia </a></li>
+                    <li><a href="ensino medio.html">Ensino M&eacute;dio</a></li>
+                    <li><a href="ensino superior.html">Ensino Superior</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="prof"><img src="imagem/ed.png" alt=""></div>
+        <p> O melhor de Educa&ccedil;&atilde;o d&aacute;-se aqui!</p>
+        <section>
+            <h2>Envie sua Sugestão</h2>
+            <form action="sugestao.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required><br>
+                <label for="provincia">Província:</label>
+                <input type="text" id="provincia" name="provincia" required><br>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-corpo">
+            <div>
+                <p> Educa&ccedil;&atilde;o Mz &eacute; uma empresa independente que proporciona o ensino de forma mais pr&aacute;tica para todos.</p>
+                <h2 style="text-align: center;"> Siga-nos </h2>
+                <ul>
+                    <li><a href="https://chat.whatsapp.com/GdffNH6NDOtFw9rJ8P9Dbr"><img src="imagem/wtv.png" alt="whatsap"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100094266972705&mibextid=ZbWKwL"><img src="imagem/fb.png" alt="facebook"></a></li>
+                    <li><a href="https://youtube.com/@EducacaoMz-rn8nh?si=JL2RQgA-WI2Tm5p2"><img src="imagem/yt.png" alt="youtube"></a></li>
+                    <li><a href="https://www.tiktok.com/@educacaomz.com?_t=8kJyzyPRVGn&_r=1"><img src="imagem/tk.png" alt="tiktok"></a></li>
+                </ul>
+                <p>e</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy;Educa&ccedil;&atilde;o  Mz 24.
+        </div>
+    </footer>
+</body>
+</html>
