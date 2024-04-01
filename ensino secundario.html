@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Betinho Alberto Dos Santos">
+    <meta name="desription" content="Educa&ccedil;&atilde;o Mz &eacute; uma empresa independente que proporciona o ensino de forma mais pr&aacute;tica para todos.">
+    <meta name="google-adsense-account" content="ca-pub-7583609756869035">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7583609756869035"
+     crossorigin="anonymous"></script>
+    <link rel="icon" type="imagem/jpg"   href="imagem/logo (2).png">
+    <title style="font-family: Roboto;">Educa&ccedil;&atilde;o Mz</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: serif;
+        }
+        nav .logo img {
+            width: 20%;
+            height: auto;
+            margin-left: 40%;
+            margin-top: 10px;
+        }
+        nav h1 {
+            color: blue;
+            font-family: Roboto;
+            text-align: center;
+        }
+        .nav-bar a{
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .nav-bar > ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-bar > ul > li > a {
+            padding: 10px;
+            background: green;
+        }
+        .nav-bar > ul > li > a:hover {
+            background: blue;
+            color: white;
+        }
+        .nav-bar .active {
+            background-color: blue;
+            color: white;
+        }
+        .nav-bar li {
+            border: 1px solid lightblue;
+        }
+        .nav-bar li:last-child {
+            border-bottom: none;
+        }
+        main {
+            flex: 1 0 auto;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .livros {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .livros li a {
+            color: black;
+            text-decoration: none;
+        }
+        .livros li a:hover {
+            color: green;
+        }
+        .conteiner {
+            margin-bottom: 20px;
+        }
+        footer {
+            color: blue;
+            background: lightblue;
+            position: relative; /* positiona os direitos autores por baixo */
+            font-size: 80%;
+            text-align: center;
+        }
+        .footer-copyright {
+            width: 100%;
+            height: 40px;
+            background: black;
+            color: white;
+            /* posiciona os direitos autorais por baixo do roda pe */
+            padding: 10px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        .footer-corpo ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+        .footer-corpo li {
+            display: inline;
+        }
+        .footer-corpo li > a {
+            color: white;
+            text-decoration: none;
+            margin-bottom: 7px;
+        }
+        .footer-corpo li a img {
+            width: 30px;
+            height: auto;
+        }
+        @media only screen and (max-width:575px) {
+            iframe {
+                width: 320px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imagem/logo (2).png" alt="logo">
+            </div>
+            <h1> Educac&atilde;o Mz</h1>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="index.html" class="active">In&iacute;cio</a></li>
+                    <li><a href="ensino primario.html">Ensino prim&aacute;rio</a></li>
+                    <li><a href="ensino secundario.html">Ensino secund&aacute;rio</a></li>
+                    <li><a href="ensino a distancia.html">Ensino a dist&acirc;ncia </a></li>
+                    <li><a href="ensino medio.html">Ensino M&eacute;dio</a></li>
+                    <li><a href="ensino superior.html">Ensino Superior</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2> Livros da 7&ordf; Classe</h2>
+        <div>
+            <ul class="livros">
+                <li><a href="FICHA-COMPLETA-MATEMATICA-7a-Classe.pdf"> Matemática</a></li>
+                <li><a href="Ficha-Completa-de-Ingles-7a-Classe.pdf"> Inglês </a></li>
+                <li><a href="FICHA-COMPLETA-DE-PORTUGUES-7a-Classe.pdf"> Portugu&eacute;s</a></li>
+                <li><a href="Ficha-Completa-Geografia-7a-classe.pdf"> Geografia</a></li>
+                <li><a href="Ficha-Completa-de-BIOLOGIA-7aClasse.pdf"> Biologia </a></li>
+                <li><a href="Ficha-Completa-de-Educacao-Visual-7a-Classe.pdf"> Educa&ccedil;&atilde;o Visual</a></li>
+                <li><a href="FICHA-Completa-de-HISTORIA-7a-Classe.pdf"> História</a></li>
+            </ul>
+        </div>
+        <h2> Livros da 11&ordf; Classe</h2>
+        <div>
+            <ul class="livros">
+                <li><a href="Matemática 11ª Classe.pdf"> Matemática</a></li>
+                <li><a href="Biologia 11ª Classe.pdf"> Biologia </a></li>
+                <li><a href="Física - 11ᵃ Classe -Longman Moç.pdf"> F&iacute;sica</a></li>
+                <li><a href="Química 11ª Classe Textos Editores.pdf"> Qu&iacute;mica</a></li>
+            </ul>
+        </div>
+        <h2> Livros da 12&ordf; Classe</h2>
+        <div>
+            <ul class="livros">
+                <li><a href="Matemática 12ª Classe.pdf"> Matemática</a></li>
+                <li><a href="Inglês 12ª Classe (Textos Editores).pdf"> Inglês </a></li>
+                <li><a href="Química 12ª Classe.pdf"> Química</a></li>
+                <li><a href="my f 12.pdf"> F&iacute;sica</a></li>
+                <li><a href="Biologia 12ª Classe.pdf"> Biologia </a></li>
+                <li><a href="DGD - 12ª Classe (Texto Editores).pdf"> DGD</a></li>
+                <li><a href="My geo 12.pdf"> Geografia</a></li>
+                <li><a href="História 12ª Classe (Plural Editores).pdf"> História</a></li>
+            </ul>
+        </div>
+        <h2> Matrizes dos anos passados</h2>
+        <h4>2024</h4>
+        <div>
+            <ul class="livros">
+                <li><a href="MATRIZES 10A CLASSE 2023 FRENTE.pdf"> D&eacute;cima classe frente</a></li>
+                <li><a href="MATRIZES 10A CLASSE 2023 VERSO.pdf">D&eacute;cima classe verso</a></li>
+                <li><a href="MATRIZES 12A CLASSE 2023 FRENTE.pdf">D&eacute;cima segunda classe frente</a></li>
+                <li><a href="MATRIZES 12A CLASSE  2023 VERSO.pdf">D&eacute;cima segunda classe verso</a></li>
+            </ul>
+        </div>
+        <h2> Aulas Online</h2>
+        <p> Al&eacute;m dos livros e outros materias que a Educação Mz oferece, oferece tamb&eacute;m aulas online para alunos do ensino secund&aacute;rio. Agora &eacute; mais f&aacute;cil estudar em casa com o avan&ccedil;o da tecnologia. </p>
+        <p> Os v&iacute;deos abaixo s&atilde;o apenas alguns, os outros v&iacute;deos poder&aacute;s encontrar no nosso <a style="text-decoration: none;" href="https://youtube.com/@EducacaoMz-rn8nh?si=JL2RQgA-WI2Tm5p2">canal</a> no youtube</p>
+        <div class="conteiner">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YQ7AMqo1hiQ?si=sP9G8catD8T4AhJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4>Elementos do querto grupo da tabela peri&oacute;dica</h4>
+        </div>
+        <div class="conteiner">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d1kPl5Jzgk0?si=6jKr6bNBoTeYzEP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4>Movimento Retil&iacute;neo Uniforme</h4>
+        </div>
+        <div class="conteiner">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XlOg2Hqea5A?si=3QqpdujGT0S0WSoB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4> O que &eacute; Taxa de Natalidade</h4>
+        </div>
+        <div class="conteiner">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vrfB7tSBjus?si=Zfs-MOA4pgkBnsjV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4>Diferen&ccedil;a entre C&eacute;lula Procariota e Eucariota</h4>
+        </div>
+        <div class="conteiner">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/495TiN0_H8M?si=9SWD3Zm6URqCY6uD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4>Diferen&ccedil;a entre Adjctivo Uniforme e Biforme</h4>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-corpo">
+            <div>
+                <p> Educa&ccedil;&atilde;o Mz &eacute; uma empresa independente que proporciona o ensino de forma mais pr&aacute;tica para todos.</p>
+                <h2 style="text-align: center;"> Siga-nos </h2>
+                <ul>
+                    <li><a href="https://chat.whatsapp.com/GdffNH6NDOtFw9rJ8P9Dbr"><img src="imagem/wtv.png" alt="whatsap"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100094266972705&mibextid=ZbWKwL"><img src="imagem/fb.png" alt="facebook"></a></li>
+                    <li><a href="https://youtube.com/@EducacaoMz-rn8nh?si=JL2RQgA-WI2Tm5p2"><img src="imagem/yt.png" alt="youtube"></a></li>
+                    <li><a href="https://www.tiktok.com/@educacaomz.com?_t=8kJyzyPRVGn&_r=1"><img src="imagem/tk.png" alt="tiktok"></a></li>
+                </ul>
+                <p>e</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy;Educa&ccedil;&atilde;o  Mz 24.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Betinho Alberto Dos Santos">
+    <meta name="desription" content="Educa&ccedil;&atilde;o Mz &eacute; uma empresa independente que proporciona o ensino de forma mais pr&aacute;tica para todos.">
+    <meta name="google-adsense-account" content="ca-pub-7583609756869035">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7583609756869035"
+     crossorigin="anonymous"></script>
+    <link rel="icon" type="imagem/jpg"   href="imagem/logo (2).png">
+    <title style="font-family: Roboto;">Educa&ccedil;&atilde;o Mz</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: serif;
+        }
+        nav .logo img {
+            width: 20%;
+            height: auto;
+            margin-left: 40%;
+            margin-top: 10px;
+        }
+        nav h1 {
+            color: blue;
+            font-family: Roboto;
+            text-align: center;
+        }
+        .nav-bar a{
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .nav-bar > ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-bar > ul > li > a {
+            padding: 10px;
+            background: green;
+        }
+        .nav-bar > ul > li > a:hover {
+            background: blue;
+            color: white;
+        }
+        .nav-bar .active {
+            background-color: blue;
+            color: white;
+        }
+        .nav-bar li {
+            border: 1px solid lightblue;
+        }
+        .nav-bar li:last-child {
+            border-bottom: none;
+        }
+        main {
+            flex: 1 0 auto;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        input[type="text"] {
+            width: 100px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #resultado1, #resultado2, #resultado3, #resultado4, #resultado4, #resultado6, #resultado7, #resultado8  {
+            font-weight: bold;
+        }
+        footer {
+            color: blue;
+            background: lightblue;
+            position: relative; /* positiona os direitos autores por baixo */
+            font-size: 80%;
+            text-align: center;
+        }
+        .footer-copyright {
+            width: 100%;
+            height: 40px;
+            background: black;
+            color: white;
+            /* posiciona os direitos autorais por baixo do roda pe */
+            padding: 10px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        .footer-corpo ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+        .footer-corpo li {
+            display: inline;
+        }
+        .footer-corpo li > a {
+            color: white;
+            text-decoration: none;
+            margin-bottom: 7px;
+        }
+        .footer-corpo li a img {
+            width: 30px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imagem/logo (2).png" alt="logo">
+            </div>
+            <h1> Educac&atilde;o Mz</h1>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="index.html" class="active">In&iacute;cio</a></li>
+                    <li><a href="ensino primario.html">Ensino prim&aacute;rio</a></li>
+                    <li><a href="ensino secundario.html">Ensino secund&aacute;rio</a></li>
+                    <li><a href="ensino a distancia.html">Ensino a dist&acirc;ncia </a></li>
+                    <li><a href="ensino medio.html">Ensino M&eacute;dio</a></li>
+                    <li><a href="ensino superior.html">Ensino Superior</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        
+<h2>Conversores de Unidades</h2>
+<p> Com ajuda da tecnolgia as coisas vem melhorando bastente e Educa&ccedil;&atilde;o Mz faz parte desta tecnologia, raz&atilde;o pela qual decidiu criar algo para o benef&iacute;fio do povo mo&ccedil;ambicano. <br> Por baixo encontran-se os conversores de unidades mais usasdos no nosso pa&iacute;s para ajudar os estudantes nos seus c&aacute;lculos no momento de estudo. Este sistema conta com unidades avan&ccedil;adas como por exemplo metro ao quadrado (m&sup2;) e  metro ao cubo (m&sup3;) para facilitar mais a convers&atilde;o.  <br> Caso queiras algo mais, queira por favor entrar em contacto atrav&eacute;s do formul&aacute;rio que se encontra na <a style="text-decoration: none;" href="index.html">p&aacute;gina inicial</a> do no nosso site.</p>
+<h2>Conversor de Comprimento</h2>
+<label for="valor1">Valor:</label>
+<input type="text" id="valor1">
+<select id="de1">
+    <option value="Km">Km</option>
+    <option value="hm">hm</option>
+    <option value="dam">dam</option>
+    <option value="m">m</option>
+    <option value="dm">dm</option>
+    <option value="cm">cm</option>
+    <option value="mm">mm</option>
+    <option value="Km2">Km²</option>
+    <option value="hm2">hm²</option>
+    <option value="dam2">dam²</option>
+    <option value="m2">m²</option>
+    <option value="dm2">dm²</option>
+    <option value="cm2">cm²</option>
+    <option value="mm2">mm²</option>
+    <option value="Km3">Km³</option>
+    <option value="hm3">hm³</option>
+    <option value="dam3">dam³</option>
+    <option value="m3">m³</option>
+    <option value="dm3">dm³</option>
+    <option value="cm3">cm³</option>
+    <option value="mm3">mm³</option>
+</select>
+<label for="para1">para</label>
+<select id="para1">
+    <option value="Km">Km</option>
+    <option value="hm">hm</option>
+    <option value="dam">dam</option>
+    <option value="m">m</option>
+    <option value="dm">dm</option>
+    <option value="cm">cm</option>
+    <option value="mm">mm</option>
+    <option value="Km2">Km²</option>
+    <option value="hm2">hm²</option>
+    <option value="dam2">dam²</option>
+    <option value="m2">m²</option>
+    <option value="dm2">dm²</option>
+    <option value="cm2">cm²</option>
+    <option value="mm2">mm²</option>
+    <option value="Km3">Km³</option>
+    <option value="hm3">hm³</option>
+    <option value="dam3">dam³</option>
+    <option value="m3">m³</option>
+    <option value="dm3">dm³</option>
+    <option value="cm3">cm³</option>
+    <option value="mm3">mm³</option>
+</select>
+<button onclick="converter1()">Converter</button>
+
+<p id="resultado1"></p>
+
+<h2>Conversor de Capacidade</h2>
+<label for="valor2">Valor:</label>
+<input type="text" id="valor2">
+<select id="de2">
+    <option value="Kl">Kl</option>
+    <option value="hl">hl</option>
+    <option value="dal">dal</option>
+    <option value="l">l</option>
+    <option value="dl">dl</option>
+    <option value="cl">cl</option>
+    <option value="ml">ml</option>
+    <option value="Kl2">Kl²</option>
+    <option value="hl2">hl²</option>
+    <option value="dal2">dal²</option>
+    <option value="l2">l²</option>
+    <option value="dl2">dl²</option>
+    <option value="cl2">cl²</option>
+    <option value="ml2">ml²</option>
+    <option value="Kl3">Kl³</option>
+    <option value="hl3">hl³</option>
+    <option value="dal3">dal³</option>
+    <option value="l3">l³</option>
+    <option value="dl3">dl³</option>
+    <option value="cl3">cl³</option>
+    <option value="ml3">ml³</option>
+</select>
+<label for="para2">para</label>
+<select id="para2">
+    <option value="Kl">Kl</option>
+    <option value="hl">hl</option>
+    <option value="dal">dal</option>
+    <option value="l">l</option>
+    <option value="dl">dl</option>
+    <option value="cl">cl</option>
+    <option value="ml">ml</option>
+    <option value="Kl2">Kl²</option>
+    <option value="hl2">hl²</option>
+    <option value="dal2">dal²</option>
+    <option value="l2">l²</option>
+    <option value="dl2">dl²</option>
+    <option value="cl2">cl²</option>
+    <option value="ml2">ml²</option>
+    <option value="Kl3">Kl³</option>
+    <option value="hl3">hl³</option>
+    <option value="dal3">dal³</option>
+    <option value="l3">l³</option>
+    <option value="dl3">dl³</option>
+    <option value="cl3">cl³</option>
+    <option value="ml3">ml³</option>
+</select>
+<button onclick="converter2()">Converter</button>
+
+<p id="resultado2"></p>
+
+<h2>Conversor de Massa</h2>
+<label for="valor3">Valor:</label>
+<input type="text" id="valor3">
+<select id="de3">
+    <option value="Kg">Kg</option>
+    <option value="hg">hg</option>
+    <option value="dag">dag</option>
+    <option value="g">g</option>
+    <option value="dg">dg</option>
+    <option value="cg">cg</option>
+    <option value="mg">mg</option>
+    <option value="Kg2">Kg²</option>
+    <option value="hg2">hg²</option>
+    <option value="dag2">dag²</option>
+    <option value="g2">g²</option>
+    <option value="dg2">dg²</option>
+    <option value="cg2">cg²</option>
+    <option value="mg2">mg²</option>
+    <option value="Kg3">Kg³</option>
+    <option value="hg3">hg³</option>
+    <option value="dag3">dag³</option>
+    <option value="g3">g³</option>
+    <option value="dg3">dg³</option>
+    <option value="cg3">cg³</option>
+    <option value="mg3">mg³</option>
+</select>
+<label for="para3">para</label>
+<select id="para3">
+    <option value="Kg">Kg</option>
+    <option value="hg">hg</option>
+    <option value="dag">dag</option>
+    <option value="g">g</option>
+    <option value="dg">dg</option>
+    <option value="cg">cg</option>
+    <option value="mg">mg</option>
+    <option value="Kg2">Kg²</option>
+    <option value="hg2">hg²</option>
+    <option value="dag2">dag²</option>
+    <option value="g2">g²</option>
+    <option value="dg2">dg²</option>
+    <option value="cg2">cg²</option>
+    <option value="mg2">mg²</option>
+    <option value="Kg3">Kg³</option>
+    <option value="hg3">hg³</option>
+    <option value="dag3">dag³</option>
+    <option value="g3">g³</option>
+    <option value="dg3">dg³</option>
+    <option value="cg3">cg³</option>
+    <option value="mg3">mg³</option>
+</select>
+<button onclick="converter3()">Converter</button>
+
+<p id="resultado3"></p>
+
+<h2>Conversor de Toneladas</h2>
+<label for="valor4">Valor:</label>
+<input type="text" id="valor4">
+<select id="de4">
+    <option value="toneladas">Toneladas</option>
+    <option value="toneladas2">Toneladas²</option>
+    <option value="toneladas3">Toneladas³</option>
+    <option value="quilogramas">Quilogramas</option>
+    <option value="quilogramas2">Quilogramas²</option>
+    <option value="quilogramas3">Quilogramas³</option>
+    <option value="gramas">Gramas</option>
+    <option value="gramas2">Gramas²</option>
+    <option value="gramas3">Gramas³</option>
+    <option value="miligramas">Miligramas</option>
+    <option value="miligramas2">Miligramas²</option>
+    <option value="miligramas3">Miligramas³</option>
+</select>
+<label for="para4">para</label>
+<select id="para4">
+    <option value="toneladas">Toneladas</option>
+    <option value="toneladas2">Toneladas²</option>
+    <option value="toneladas3">Toneladas³</option>
+    <option value="quilogramas">Quilogramas</option>
+    <option value="quilogramas2">Quilogramas²</option>
+    <option value="quilogramas3">Quilogramas³</option>
+    <option value="gramas">Gramas</option>
+    <option value="gramas2">Gramas²</option>
+    <option value="gramas3">Gramas³</option>
+    <option value="miligramas">Miligramas</option>
+    <option value="miligramas2">Miligramas²</option>
+    <option value="miligramas3">Miligramas³</option>
+</select>
+<button onclick="converter4()">Converter</button>
+
+<p id="resultado4"></p>
+
+<h2>Conversor de Unidades Agrárias</h2>
+<label for="valor6">Valor:</label>
+<input type="text" id="valor6">
+<select id="de6">
+    <option value="ha">ha</option>
+    <option value="a">a</option>
+    <option value="ca">ca</option>
+    <option value="ha2">ha²</option>
+    <option value="a2">a²</option>
+    <option value="ca2">ca²</option>
+    <option value="ha3">ha³</option>
+    <option value="a3">a³</option>
+    <option value="ca3">ca³</option>
+</select>
+<label for="para6">para</label>
+<select id="para6">
+    <option value="ha">ha</option>
+    <option value="a">a</option>
+    <option value="ca">ca</option>
+    <option value="ha2">ha²</option>
+    <option value="a2">a²</option>
+    <option value="ca2">ca²</option>
+    <option value="ha3">ha³</option>
+    <option value="a3">a³</option>
+    <option value="ca3">ca³</option>
+</select>
+<button onclick="converter6()">Converter</button>
+
+<p id="resultado6"></p>
+<h2>Conversor de Temperatura</h2>
+<label for="temp5">Temperatura:</label>
+<input type="text" id="temp5">
+<select id="de5">
+    <option value="C">Celsius</option>
+    <option value="F">Farinheite</option>
+    <option value="K">Kelvin</option>
+</select>
+<label for="para5">para</label>
+<select id="para5">
+    <option value="C">Celsius</option>
+    <option value="F">Farinheite</option>
+    <option value="K">Kelvin</option>
+</select>
+<button onclick="converter5()">Converter</button>
+
+<p id="resultado5"></p>
+<h2>Conversor de Velocidade</h2>
+<label for="valor7">Valor:</label>
+<input type="text" id="valor7">
+<select id="de7">
+    <option value="m/s">m/s</option>
+    <option value="km/h">km/h</option>
+    <option value="mph">mph</option>
+    <option value="knot">nó</option>
+    <option value="m2/s2">m²/s²</option>
+    <option value="km2/h2">km²/h²</option>
+    <option value="mph2">mph²</option>
+    <option value="knot2">nó²</option>
+    <option value="m3/s3">m³/s³</option>
+    <option value="km3/h3">km³/h³</option>
+    <option value="mph3">mph³</option>
+    <option value="knot3">nó³</option>
+</select>
+<label for="para7">para</label>
+<select id="para7">
+    <option value="m/s">m/s</option>
+    <option value="km/h">km/h</option>
+    <option value="mph">mph</option>
+    <option value="knot">nó</option>
+    <option value="m2/s2">m²/s²</option>
+    <option value="km2/h2">km²/h²</option>
+    <option value="mph2">mph²</option>
+    <option value="knot2">nó²</option>
+    <option value="m3/s3">m³/s³</option>
+    <option value="km3/h3">km³/h³</option>
+    <option value="mph3">mph³</option>
+    <option value="knot3">nó³</option>
+</select>
+<button onclick="converter7()">Converter</button>
+
+<p id="resultado7"></p>
+<h2>Conversor de Tempo</h2>
+<label for="valor8">Valor:</label>
+<input type="text" id="valor8">
+<select id="de8">
+    <option value="horas">Horas</option>
+    <option value="minutos">Minutos</option>
+    <option value="segundos">Segundos</option>
+    <option value="milissegundos">Milissegundos</option>
+    <option value="horas2">Horas²</option>
+    <option value="minutos2">Minutos²</option>
+    <option value="segundos2">Segundos²</option>
+    <option value="milissegundos2">Milissegundos²</option>
+    <option value="horas3">Horas³</option>
+    <option value="minutos3">Minutos³</option>
+    <option value="segundos3">Segundos³</option>
+    <option value="milissegundos3">Milissegundos³</option>
+</select>
+<label for="para8">para</label>
+<select id="para8">
+    <option value="horas">Horas</option>
+    <option value="minutos">Minutos</option>
+    <option value="segundos">Segundos</option>
+    <option value="milissegundos">Milissegundos</option>
+    <option value="horas2">Horas²</option>
+    <option value="minutos2">Minutos²</option>
+    <option value="segundos2">Segundos²</option>
+    <option value="milissegundos2">Milissegundos²</option>
+    <option value="horas3">Horas³</option>
+    <option value="minutos3">Minutos³</option>
+    <option value="segundos3">Segundos³</option>
+    <option value="milissegundos3">Milissegundos³</option>
+</select>
+<button onclick="converter8()">Converter</button>
+
+<p id="resultado8"></p>
+
+<script>
+function converter1() {
+    var valor = parseFloat(document.getElementById("valor1").value);
+    var de = document.getElementById("de1").value;
+    var para = document.getElementById("para1").value;
+
+    var fatores = {
+        "Km": 1000,
+        "hm": 100,
+        "dam": 10,
+        "m": 1,
+        "dm": 0.1,
+        "cm": 0.01,
+        "mm": 0.001,
+        "Km2": 1000000,
+        "hm2": 10000,
+        "dam2": 100,
+        "m2": 1,
+        "dm2": 0.01,
+        "cm2": 0.0001,
+        "mm2": 0.000001,
+        "Km3": 1000000000,
+        "hm3": 1000000,
+        "dam3": 1000,
+        "m3": 1,
+        "dm3": 0.001,
+        "cm3": 0.000001,
+        "mm3": 0.000000001
+    };
+
+    var resultado = valor * fatores[de] / fatores[para];
+
+    document.getElementById("resultado1").innerHTML = "Resultado: " + resultado.toFixed(2) + " " + para;
+}
+function converter2() {
+    var valor = parseFloat(document.getElementById("valor2").value);
+    var de = document.getElementById("de2").value;
+    var para = document.getElementById("para2").value;
+
+    var fatores = {
+        "Kl": 1000,
+        "hl": 100,
+        "dal": 10,
+        "l": 1,
+        "dl": 0.1,
+        "cl": 0.01,
+        "ml": 0.001,
+        "Kl2": 1000000,
+        "hl2": 10000,
+        "dal2": 100,
+        "l2": 1,
+        "dl2": 0.01,
+        "cl2": 0.0001,
+        "ml2": 0.000001,
+        "Kl3": 1000000000,
+        "hl3": 1000000,
+        "dal3": 1000,
+        "l3": 1,
+        "dl3": 0.001,
+        "cl3": 0.000001,
+        "ml3": 0.000000001
+    };
+
+    var resultado = valor * fatores[de] / fatores[para];
+
+    document.getElementById("resultado2").innerHTML = "Resultado: " + resultado.toFixed(2) + " " + para;
+}
+function converter3() {
+    var valor = parseFloat(document.getElementById("valor3").value);
+    var de = document.getElementById("de3").value;
+    var para = document.getElementById("para3").value;
+
+    var fatores = {
+        "Kg": 1000,
+        "hg": 100,
+        "dag": 10,
+        "g": 1,
+        "dg": 0.1,
+        "cg": 0.01,
+        "mg": 0.001,
+        "Kg2": 1000000,
+        "hg2": 10000,
+        "dag2": 100,
+        "g2": 1,
+        "dg2": 0.01,
+        "cg2": 0.0001,
+        "mg2": 0.000001,
+        "Kg3": 1000000000,
+        "hg3": 1000000,
+        "dag3": 1000,
+        "g3": 1,
+        "dg3": 0.001,
+        "cg3": 0.000001,
+        "mg3": 0.000000001
+    };
+
+    var resultado = valor * fatores[de] / fatores[para];
+
+    document.getElementById("resultado3").innerHTML = "Resultado: " + resultado.toFixed(2) + " " + para;
+}
+function converter4() {
+    var valor = parseFloat(document.getElementById("valor4").value);
+    var de = document.getElementById("de4").value;
+    var para = document.getElementById("para4").value;
+
+    var fatores = {
+        "toneladas": 1,
+        "toneladas2": 1,
+        "toneladas3": 1,
+        "quilogramas": 1000,
+        "quilogramas2": 1000000,
+        "quilogramas3": 1000000000,
+        "gramas": 1000000,
+        "gramas2": 1000000000,
+        "gramas3": 1000000000000,
+        "miligramas": 1000000000,
+        "miligramas2": 1000000000000,
+        "miligramas3": 1000000000000000
+    };
+
+    var resultado = valor * fatores[para] / fatores[de];
+
+    document.getElementById("resultado4").innerHTML = "Resultado: " + resultado.toFixed(2) + " " + para;
+}
+function converter6() {
+    var valor = parseFloat(document.getElementById("valor6").value);
+    var de = document.getElementById("de6").value;
+    var para = document.getElementById("para6").value;
+
+    var fatores = {
+        "ha": 1,
+        "a": 0.01,
+        "ca": 0.0001,
+        "ha2": 10000,
+        "a2": 100,
+        "ca2": 1,
+        "ha3": 1000000,
+        "a3": 10000,
+        "ca3": 100
+    };
+
+    var resultado = valor * fatores[de] / fatores[para];
+
+    document.getElementById("resultado6").innerHTML = "Resultado: " + resultado.toFixed(2) + " " + para;
+}
+function converter5() {
+    var temp = parseFloat(document.getElementById("temp5").value);
+    var de = document.getElementById("de5").value;
+    var para = document.getElementById("para5").value;
+
+    var resultado;
+
+    if (de === "C" && para === "F") {
+        resultado = (temp * 9/5) + 32;
+    } else if (de === "C" && para === "K") {
+        resultado = temp + 273.15;
+    } else if (de === "F" && para === "C") {
+        resultado = (temp - 32) * 5/9;
+    } else if (de === "F" && para === "K") {
+        resultado = (temp - 32) * 5/9 + 273.15;
+    } else if (de === "K" && para === "C") {
+        resultado = temp - 273.15;
+    } else if (de === "K" && para === "F") {
+        resultado = (temp - 273.15) * 9/5 + 32;
+    } else {
+        resultado = temp; // Se as unidades de temperatura forem as mesmas
+    }
+
+    document.getElementById("resultado5").innerHTML = "Resultado: " + resultado.toFixed(2) + " " + para;
+}
+function converter7() {
+    var valor = parseFloat(document.getElementById("valor7").value);
+    var de = document.getElementById("de7").value;
+    var para = document.getElementById("para7").value;
+
+    var fatores = {
+        "m/s": 1,
+        "km/h": 3.6,
+        "mph": 2.23694,
+        "knot": 1.94384,
+        "m2/s2": 1,
+        "km2/h2": 1,
+        "mph2": 1,
+        "knot2": 1,
+        "m3/s3": 1,
+        "km3/h3": 1,
+        "mph3": 1,
+        "knot3": 1
+    };
+
+    var resultado = valor * fatores[de] / fatores[para];
+
+    document.getElementById("resultado7").innerHTML = "Resultado: " + resultado.toFixed(2) + " " + para;
+}
+function converter8() {
+    var valor = parseFloat(document.getElementById("valor8").value);
+    var de = document.getElementById("de8").value;
+    var para = document.getElementById("para8").value;
+
+    var fatores = {
+        "horas": 1,
+        "minutos": 60,
+        "segundos": 3600,
+        "milissegundos": 3600000,
+        "horas2": 1,
+        "minutos2": 1,
+        "segundos2": 1,
+        "milissegundos2": 1,
+        "horas3": 1,
+        "minutos3": 1,
+        "segundos3": 1,
+        "milissegundos3": 1
+    };
+
+    var resultado = valor * fatores[para] / fatores[de];
+
+    document.getElementById("resultado8").innerHTML = "Resultado: " + resultado.toFixed(2) + " " + para;
+}
+</script>
+    </main>
+    <footer>
+        <div class="footer-corpo">
+            <div>
+                <p> Educa&ccedil;&atilde;o Mz &eacute; uma empresa independente que proporciona o ensino de forma mais pr&aacute;tica para todos.</p>
+                <h2 style="text-align: center;"> Siga-nos </h2>
+                <ul>
+                    <li><a href="https://chat.whatsapp.com/GdffNH6NDOtFw9rJ8P9Dbr"><img src="imagem/wtv.png" alt="whatsap"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100094266972705&mibextid=ZbWKwL"><img src="imagem/fb.png" alt="facebook"></a></li>
+                    <li><a href="https://youtube.com/@EducacaoMz-rn8nh?si=JL2RQgA-WI2Tm5p2"><img src="imagem/yt.png" alt="youtube"></a></li>
+                    <li><a href="https://www.tiktok.com/@educacaomz.com?_t=8kJyzyPRVGn&_r=1"><img src="imagem/tk.png" alt="tiktok"></a></li>
+                </ul>
+                <p>e</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy;Educa&ccedil;&atilde;o  Mz 24.
+        </div>
+    </footer>
+</body>
+</html>
