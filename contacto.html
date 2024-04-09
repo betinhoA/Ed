@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Betinho Alberto Dos Santos">
+    <meta name="desription" content="Educa&ccedil;&atilde;o Mz &eacute; uma empresa independente que proporciona o ensino de forma mais pr&aacute;tica para todos.">
+    <link rel="icon" type="imagem/jpg"   href="imagem/logo (2).png">
+    <title>Educação Mz</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Estilos CSS para a página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .blue {
+            background-color: #0f038b;
+            height: 20px;
+        }
+        .logo img {
+            margin-left: 40px;
+        }
+        .logo p  {
+            font-size: 20px;
+            margin-top: -40px;
+            margin-left: 100px;
+            font-family: Roboto;
+        }
+        header img {
+            width: 40px;
+        }
+        nav {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            color: orange;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .highlight {
+            padding: 20px;
+            text-align: center;
+            margin-top: 130px;
+        }
+        .highlight ul {
+            padding: 0;
+            margin: 0;
+        }
+        .highlight li {
+            list-style-type: none;
+        }
+        .highlight img {
+            width: 40px;
+        }
+        .imagem {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .imagem img {
+            width: 560px;
+            height: 315px;
+        }
+        .testimonial {
+            padding: 20px;
+            text-align: center;
+        }
+        .testimonial ul {
+            padding: 0;
+            margin: 0;
+        }
+        .testimonial li {
+            list-style-type: none;
+        }
+        .testimonial img {
+            width: 40px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color:green;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            color: orange;
+        }
+        @media only screen and (max-width:575px) {
+            .logo p {
+                margin-top: -5px;
+            }
+            .imagem img {
+                width: 320px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="blue"></div>
+    <div class="logo">
+        <img src="imagem/logo.jpg" alt="">
+        <p>Educação Mz</p>
+    </div>
+</header>
+<nav>
+    <a href="index.html">Início</a>
+    <a href="ensino-primario.html">Ensino Prim&aacute;rio</a>
+    <a href="ensino-secundario.html">Ensino Secund&aacute;rio</a>
+    <a href="ensino-a-distancia.html">Ensino a Dist&acirc;ncia</a>
+    <a href="ensino-medio.html">Ensino M&eacute;dio</a>
+    <a href="ensino-superior.html">Ensino Superior</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="recurso.html">Recursos</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+<main>
+<div class="highlight">
+    <h2>Contactos</h2>
+    <p>Telefone: +258 (85 317 56 33)</p>
+    <p>E-mail: betinhoalbertodossantos625@gmail.com</p>
+    <ul>
+        <li><a href="https://chat.whatsapp.com/GdffNH6NDOtFw9rJ8P9Dbr"><img src="imagem/wtv.png" alt="whatsap"></a></li>
+    </ul>
+</div>
+<div class="testimonial">
+    <h2>Siga-nos</h2>
+    <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100094266972705&mibextid=ZbWKwL"><img src="imagem/fb.png" alt="facebook"></a></li>
+        <li><a href="https://youtube.com/@EducacaoMz-rn8nh?si=JL2RQgA-WI2Tm5p2"><img src="imagem/yt.png" alt="youtube"></a></li>
+        <li><a href="https://www.tiktok.com/@educacaomz.com?_t=8kJyzyPRVGn&_r=1"><img src="imagem/tk.png" alt="tiktok"></a></li>
+    </ul>
+</div>
+<section id="contato">
+    <h2>Entre em Contacto</h2>
+    <p>Se você tiver alguma dúvida, comentário ou sugestão, não hesite em entrar em contacto conosco:</p>
+    <form action="https://formspree.io/f/mdoqlrez" method="post">
+        <input type="text" name="nome" placeholder="Nome" required><br>
+        <input type="text" name="email" placeholder="E-mail" required><br>
+        <textarea name="mensagem" placeholder="Mensagem" rows="4" required></textarea><br>
+        <input type="submit" value="Enviar Mensagem">
+    </form>
+</section>
+</main>
+<footer>
+    <p>&copy; 2024 Educação Mz. Todos os direiros reservados</p>
+</footer>
+</body>
+</html>
