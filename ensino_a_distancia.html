@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Betinho Alberto Dos Santos">
+    <meta name="desription" content="Educa&ccedil;&atilde;o Mz &eacute; uma empresa independente que proporciona o ensino de forma mais pr&aacute;tica para todos.">
+    <link rel="icon" type="imagem/jpg"   href="imagem/logo (2).png">
+    <title>Educa&ccedil;&atilde;o Mz</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        header {
+            background-color: rgb(212, 204, 204);
+            height: 20px;
+            border-top-left-radius: 5px;
+        }
+        div.barra {
+            background: blue;
+            width: 100%;
+        }
+        .barra ul {
+            margin: 0;
+            padding: 0;
+            background-color: aquamarine;
+            height: 0vh;
+            transition: 1s;
+        }
+        .barra ul li {
+            list-style-type: none;
+            display: block;
+            padding: 10px;
+        }
+        .barra ul li:hover {
+            background-color:aqua;
+        }
+        .barra ul li:last-child:hover {
+            background: transparent;
+        } 
+        .barra ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        .barra ul li a:hover {
+            color: blue;
+        }
+        .active {
+            background-color: aqua;
+            color: blue;
+        }
+        .botao-1 {
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            width: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+        }
+        .botao-1:focus ~ ul {
+            height: 100vh;
+        }
+        .botao-1, .botao-2 {
+            margin-left: 80%;
+        }
+        .botao-2 {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            width: 60px;
+            font-family: Helvetica;
+            font-weight: bold;
+            border: 1px solid white;
+        }
+        .botao-2:hover {
+            background: yellow;
+            color: red;
+            border: 1px solid red;
+        }
+        main {
+            flex: 1 0 auto;
+            background-color: aqua;
+        }
+        .ensino h2 {
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+        .livros {
+            padding: 0;
+            margin: 0;
+        }
+        .livros li {
+            list-style-type: none;
+            padding: 20px;
+        }
+        .button-download {
+            display: inline-block;
+            background-color: green; 
+            color: #fff; 
+            padding: 10px 20px; 
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 18px; 
+            transition: background-color 0.3s ease;
+        }
+        .button-download:hover {
+            background-color: #45a049; 
+            color: orange;
+        }
+        .button-download:active {
+            background-color: #3e8e41; 
+        }
+        .online h2 {
+            margin-top: 40px;
+        }
+        .online h2, .online p, .online iframe, .online h3 {
+            margin-left: 10px;
+        }
+        .video {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: rgb(212, 204, 204);
+            text-align: center;
+        }
+        @media only screen and (max-width: 575px) {
+            iframe {
+                width: 320px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <div class="barra">
+            <button class="botao-1">Menu</button>
+            <ul>
+                <li class="active"><a href="index.html" class="active">P&aacute;gina inicial</a></li>
+                <li><a href="ensino_primario.html">Ensino prim&aacute;rio</a></li>
+                <li><a href="ensino_secundario.html">Ensino secund&aacute;rio</a></li>
+                <li><a href="ensino_a_distancia.html">Ensino a dist&acirc;ncia</a></li>
+                <li><a href="ensino_medio.html">Ensino m&eacute;dio</a></li>
+                <li><a href="ensino_superior.html">Ensino superior</li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><button class="botao-2">X</button></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="ensino">
+            <h2>Ensino a Dist&acirc;ncia</h2>
+        </div>
+        <div class="ensino">
+            <h2> M&oacute;dulos da 7&ordf;, 8&ordf;, 9&ordf; e 10&ordf; Classe</h2>
+            <ul class="livros">
+                <li><a href="ensino a distancia/Modulo-1-Agro-Pecuria.pdf" class="link-book"> Agro-Pecu&aacute;ria - 1 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulo-2-Agro-Pecuria-333.pdf" class="link-book"> Agro-Pecu&aacute;ria - 2 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-1-Biologia.pdf" class="link-book"> Biologia - 1 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-2-Biologia.pdf" class="link-book"> Biologia - 2 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-3-Biologia.pdf" class="link-book"> Biologia - 3 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-4-Biologia.pdf" class="link-book"> Biologia - 4 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-5-Biologia.pdf" class="link-book"> Biologia - 5 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-1-INGLES.pdf" class="link-book"> Inglês - 1 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-2-INGLES.pdf" class="link-book"> Inglês - 2 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-3-INGLES.pdf" class="link-book"> Inglês - 3 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-4-INGLES.pdf" class="link-book"> Inglês - 4 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-1-MATEMATICA.pdf" class="link-book"> Matemática - 1 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulo-1-M.pdf" class="link-book"> Matemática - 1.1 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-2-MATEMATICA.pdf" class="link-book"> Matemática - 2 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-3-MATEMATICA.pdf" class="link-book"> Matemática - 3 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-4-MATEMATICA.pdf" class="link-book"> Matemática - 4 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO5-MATEMATICA.pdf" class="link-book"> Matemática - 5 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulo-1-Quimica.pdf" class="link-book"> Química - 1 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulo-2-Quimica.pdf" class="link-book"> Química - 2 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulo-3-Quimica.pdf" class="link-book"> Química - 3 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-4_QUIMICA.pdf" class="link-book"> Química - 4 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulo-5_Quimica.pdf" class="link-book"> Química - 5 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-1_FISICA.pdf" class="link-book"> F&iacute;sica - 1 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-2-FISICA.pdf" class="link-book"> F&iacute;sica - 2 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-3-FISICA.pdf" class="link-book"> F&iacute;sica - 3 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-4-FISICA.pdf" class="link-book"> F&iacute;sica - 4 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO-5-FISICA.pdf" class="link-book"> F&iacute;sica - 5 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulo-2-Portugues.pdf" class="link-book"> Português - 2 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulo-3-Portugues.pdf" class="link-book"> Português - 3 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulo-4-Portugues.pdf" class="link-book"> Português - 4 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulo-5-Portugues.pdf" class="link-book"> Português - 5 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulo-Empreendedorismo.pdf" class="link-book"> Empreendedorismo <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO_3_HISTORIA.pdf" class="link-book"> História - 3 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO_4_HISTORIA.pdf" class="link-book"> História - 4 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO_5_HISTORIA.pdf" class="link-book"> História - 5 <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/MODULO_FRANCES.pdf" class="link-book"> Fran&ecirc;s <button class="button-download">Baixar</button></a></li>
+                <li><a href="ensino a distancia/Modulos-TICs.pdf" class="link-book"> TIC'S <button class="button-download">Baixar</button></a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="ensino">
+            <h2> M&oacute;dulos da 11&ordf; e 12&ordf; Classe</h2>
+                <div>
+                    <ul class="livros">
+                        <li><a href="ensino a distancia/Portugues1.pdf" class="link-book"> Português - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Portugues2.pdf" class="link-book"> Português - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Portugues3.pdf" class="link-book"> Português - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Portugues4.pdf" class="link-book"> Português - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Portugues5.pdf" class="link-book"> Português - 5 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Matematica1.pdf" class="link-book"> Matemática - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Matematica2.pdf" class="link-book"> Matemática - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Matematica1.pdf" class="link-book"> Matemática - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Matematica2.pdf" class="link-book"> Matemática - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Matematica3.pdf" class="link-book"> Matemática - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Matematica4.pdf" class="link-book"> Matemática - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Matematica5.pdf" class="link-book"> Matemática - 5 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Matematica6.pdf" class="link-book"> Matemática - 6 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Matematica7.pdf" class="link-book"> Matemática - 7 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Biologia1.pdf" class="link-book"> Biologia - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Biologia2.pdf" class="link-book"> Biologia - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Biologia3.pdf" class="link-book"> Biologia - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Biologia4.pdf" class="link-book"> Biologia - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Biologia5.pdf" class="link-book"> Biologia - 5 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Biologia6.pdf" class="link-book"> Biologia - 6 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Biologia7.pdf" class="link-book"> Biologia - 7 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Ingles1.pdf" class="link-book"> Inglês - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Ingles2.pdf" class="link-book"> Inglês - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Ingles3.pdf" class="link-book"> Inglês - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Ingles4.pdf" class="link-book"> Inglês - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Ingles5.pdf" class="link-book"> Inglês - 5 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Modulo 7 Grammar References.pdf" class="link-book" > Grammar References <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Fisica1-2º-Ciclo.pdf" class="link-book"> F&iacute;sica - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Fisica2.pdf" class="link-book"> F&iacute;sica - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Fisica3-2º-Ciclo.pdf" class="link-book"> F&iacute;sica - 3 <button class="button-download">Baixar</button><button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Fisica4-2º-Ciclo.pdf" class="link-book"> F&iacute;sica - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Fisica5.pdf" class="link-book"> F&iacute;sica - 5 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Fisica6-2º-Ciclo.pdf" class="link-book"> F&iacute;sica - 6 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Filosofia1.pdf" class="link-book"> Filosofia - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Filosofia2.pdf" class="link-book"> Filosofia - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Filosofia3.pdf" class="link-book"> Filosofia - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Filosofia4.pdf"class="link-book"> Filosofia - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Filosofia5.pdf"class="link-book"> Filosofia - 5 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Filosofia6.pdf"class="link-book"> Filosofia - 6 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Filosofia7.pdf"class="link-book"> Filosofia - 7 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Filosofia8.pdf"class="link-book"> Filosofia - 8 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Historia1.pdf" class="link-book"> História - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Historia2.pdf" class="link-book"> História - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Historia3.pdf" class="link-book"> História - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Historia4.pdf" class="link-book"> História - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Historia5.pdf" class="link-book"> História - 5 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Historia6.pdf" class="link-book"> História - 6 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Historia7.pdf" class="link-book"> História - 7 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Historia8.pdf" class="link-book"> História - 8 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Quimica1.pdf" class="link-book"> Química - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Quimica2.pdf" class="link-book"> Química - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Quimica1.pdf" class="link-book"> Química - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Quimica2.pdf" class="link-book"> Química - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Quimica3.pdf" class="link-book"> Química - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Quimica4.pdf" class="link-book"> Química - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Quimica5.pdf" class="link-book"> Química - 5 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Quimica6.pdf" class="link-book"> Química - 6 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Quimica7.pdf" class="link-book"> Química - 7 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Modulo-1-Frances-Final.pdf" class="link-book"> Franc&ecirc;s - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Modulo-2-Frances-Final.pdf" class="link-book"> Franc&ecirc;s - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Modulo-3-Frances-Final.pdf" class="link-book"> Franc&ecirc;s - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Modulo-4-Frances-Final.pdf" class="link-book"> Franc&ecirc;s - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Modulo-5-Frances-Final.pdf" class="link-book"> Franc&ecirc;s - 5 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Modulo-6-Frances-Final.pdf" class="link-book"> Franc&ecirc;s - 6 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD1-2º-Ciclo.pdf" class="link-book"> DGD - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD2-2º-Ciclo.pdf" class="link-book"> DGD - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD3-2º-Ciclo.pdf" class="link-book"> DGD - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD4-2º-Ciclo.pdf" class="link-book"> DGD - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD5-2º-Ciclo.pdf" class="link-book"> DGD - 5 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD6-2º-Ciclo.pdf" class="link-book"> DGD - 6 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD7-2º-Ciclo.pdf" class="link-book"> DGD - 7 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD8-2º-Ciclo.pdf" class="link-book"> DGD - 8 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD9-2º-Ciclo.pdf" class="link-book"> DGD - 9 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD10-2º-Ciclo.pdf" class="link-book"> DGD - 10 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD11-2º-Ciclo.pdf" class="link-book"> DGD - 11 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/DGD12-2º-Ciclo.pdf" class="link-book"> DGD - 12 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Geografia1.pdf" class="link-book"> Geografia1 - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Geografia2.pdf" class="link-book"> Geografia - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Geografia1.pdf" class="link-book"> Geografia1 - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Geografia2.pdf" class="link-book"> Geografia - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Geografia3.pdf" class="link-book"> Geografia1 - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Geografia4.pdf" class="link-book"> Geografia - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Geografia5.pdf" class="link-book"> Geografia1 - 5 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Geografia6.pdf" class="link-book"> Geografia - 6 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Geografia7.pdf" class="link-book"> Geografia1 - 7 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Geografia8.pdf" class="link-book"> Geografia - 8 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino a distancia/Geografia9.pdf" class="link-book"> Geografia1 - 9 <button class="button-download">Baixar</button></a></li>
+                    </ul>
+                </div>
+        </di>
+        <div class="online">
+            <h2> Aulas Online</h2>
+                <p> Muitos jovens em Mo&ccedil;ambique perdem os seus estudos enquanto cedo, por causa disso, o Minist&eacute;rio de Edu&ccedil;&atilde;o criou uma nova maneira de estudo que permite a esses mesmos jovens de continuar com os seus estudos. Essa nova maneira &eacute; chamada de Ensino a dist&acirc;ncia.</p>
+                <p> Ensino a dist&acirc;ncia permite que os mo&ccedil;ambicanos estudem em casa, mesmo tendo trabalho.</p>
+                <p> Uma vez que Educação Mz tem objctivo de ajudar os estudantes, criou tamb&eacute; uma maneira de dar aulas online, que s&atilde;o os m&oacute;dos do mesmo ensino. Se &eacute;s um/a luno/a que faz parte deste ensino, siga as instru&ccedil;&otilde;es que deixamos a baixo para se suceder nos seus estudos.</p>
+                <p> Os v&iacute;deos abaixo s&atilde;o apenas alguns, os outros v&iacute;deos poder&aacute;s encontrar no nosso <a style="text-decoration: none;" href="https://youtube.com/@EducacaoMz-rn8nh?si=JL2RQgA-WI2Tm5p2">canal</a> no youtube</p>
+                <h2>Ensino a dist&acirc;ncia</h2>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wxQGU9L45VE?si=d98NgLQ338KQ7K4v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>Como funciona Ensino a Dist&acirc;ncia em Mo&ccedil;ambique?</h3>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Wx9q8zoZLqs?si=oTIGam79rqjoH0b1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>Ensino a Dist&acirc;ncia Vs Ensino Presencial</h3>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5li0mdGJqkg?si=71qTXcenGDrhCimH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>Ficha Bibliogr&aacute;fica</h3>
+                </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/galAwrN_dZA?si=3LurXBECpprj9s4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>Teste Final do M&oacute;dulo 1 de Português</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2024 Educa&ccedil;&atilde;o Mz</p>
+    </footer>
+</body>
+</html>

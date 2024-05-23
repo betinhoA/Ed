@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Betinho Alberto Dos Santos">
+    <meta name="desription" content="Educa&ccedil;&atilde;o Mz &eacute; uma empresa independente que proporciona o ensino de forma mais pr&aacute;tica para todos.">
+    <link rel="icon" type="imagem/jpg"   href="imagem/logo (2).png">
+    <title>Educa&ccedil;&atilde;o Mz</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        header {
+            background-color: rgb(212, 204, 204);
+            height: 20px;
+            border-top-left-radius: 5px;
+        }
+        div.barra {
+            background: blue;
+            width: 100%;
+        }
+        .barra ul {
+            margin: 0;
+            padding: 0;
+            background-color: aquamarine;
+            height: 0vh;
+            transition: 1s;
+        }
+        .barra ul li {
+            list-style-type: none;
+            display: block;
+            padding: 10px;
+        }
+        .barra ul li:hover {
+            background-color:aqua;
+        }
+        .barra ul li:last-child:hover {
+            background: transparent;
+        } 
+        .barra ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        .barra ul li a:hover {
+            color: blue;
+        }
+        .active {
+            background-color: aqua;
+            color: blue;
+        }
+        .botao-1 {
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            width: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+        }
+        .botao-1:focus ~ ul {
+            height: 100vh;
+        }
+        .botao-1, .botao-2 {
+            margin-left: 80%;
+        }
+        .botao-2 {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            width: 60px;
+            font-family: Helvetica;
+            font-weight: bold;
+            border: 1px solid white;
+        }
+        .botao-2:hover {
+            background: yellow;
+            color: red;
+            border: 1px solid red;
+        }
+        main {
+            flex: 1 0 auto;
+            background-color: aqua;
+        }
+        .ensino h2 {
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+        .ensino h4 {
+            margin-left: 10px;
+        }
+        .livros {
+            padding: 0;
+            margin: 0;
+        }
+        .livros li {
+            list-style-type: none;
+            padding: 20px;
+        }
+        .button-download {
+            display: inline-block;
+            background-color: green; 
+            color: #fff; 
+            padding: 10px 20px; 
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 18px; 
+            transition: background-color 0.3s ease;
+        }
+        .button-download:hover {
+            background-color: #45a049; 
+            color: orange;
+        }
+        .button-download:active {
+            background-color: #3e8e41; 
+        }
+        p {
+            margin-left: 10px;
+        }
+        .online h2 {
+            margin-top: 40px;
+        }
+        .online h2, .online p, .online iframe, .online h3 {
+            margin-left: 10px;
+        }
+        .video {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: rgb(212, 204, 204);
+            text-align: center;
+        }
+        @media only screen and (max-width:575px) {
+            iframe {
+                width: 320px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <div class="barra">
+            <button class="botao-1">Menu</button>
+            <ul>
+                <li class="active"><a href="index.html" class="active">P&aacute;gina inicial</a></li>
+                <li><a href="ensino_primario.html">Ensino prim&aacute;rio</a></li>
+                <li><a href="ensino_secundario.html">Ensino secund&aacute;rio</a></li>
+                <li><a href="ensino_a_distancia.html">Ensino a dist&acirc;ncia</a></li>
+                <li><a href="ensino_medio.html">Ensino m&eacute;dio</a></li>
+                <li><a href="ensino_superior.html">Ensino superior</li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><button class="botao-2">X</button></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="ensino">
+            <h2>Ensino Superior</h2>
+        </div>
+        <div class="ensino">
+            <h2> Livros para o ensino superior, universidade e faculdade</h2>
+                <div>
+                    <ul class="livros">
+                        <li><a href="ensino superior/A Cabeca Bem-Feita - Edgar Morin.pdf" class="link-book"> A Cabe&ccedil;a bem Feita <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/a_concepcao_educacional_de_tomas_de_aquino.pdf" class="link-book"> Concep&ccedil;&atilde;o Educacional <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/ALTHUSSER - Ideologia e Aparelhos IdeolÃ³gicos do Estado.pdf" class="link-book"> Ideologia do Estado <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Caderno didático - Fonética e Fonologia do Português (1).pdf" class="link-book"> Fon&eacute;tica e Fonologia do Português <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Escolas corruptas, universidades corruptas que pode ser feito.pdf" class="link-book"> Escolas Corruptas, Universidades Corruptas, que pode ser feito? <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/hanna-arendt-a-crise-na-educacao.pdf" class="link-book"> Crise na Educação <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/New_Cutting_Edge_Intermediate_Students_39_Book.pdf" class="link-book"> New New Cutting Edge Intermediate Students <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/PedagogiadoOprimido.pdf" class="link-book">Pedagogia do Oprimido <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/principios da mudanca linguistica.pdf" class="link-book"> Princ&iacute;pios da Mudan&ccedil;a Lingu&iacute;stica <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Regras Sintacticas IEL.pdf" class="link-book"> Regras Sint&aacute;cticas <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Sintaxe 1.pdf" class="link-book">Sintaxe <button class="button-download">Baixar</button></a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="ensino">
+            <h2> Editais dos anos passados</h2>
+                <h4> 2023</h4>
+                <div>
+                    <ul class="livros">
+                        <li><a href="ensino superior/EditalUEM2023.pdf" class="link-book"> Edital UEM <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/edital_UL_2023.pdf" class="link-book"> Edital UL <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/EDITALUPM2024.pdf" class="link-book"> Edital UP <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/edital UJC -2023.pdf" class="link-book"> Edital UJC <button class="button-download">Baixar</button></a></li>
+                    </ul>
+                </div>
+                <h4> 2024</h4>
+                <div>
+                    <ul class="livros">
+                        <li><a href="ensino superior/uem.pdf" class="link-book"> Edital UEM <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/EDITAL ACIPOL - 2024.pdf" class="link-book"> Edital ACIPOL <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/EDITALUPM2024.pdf" class="link-book"> Edital UP <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/ujc.pdf" class="link-book"> Edital UJC <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/isced.pdf" class="link-book"> Edital ISCED <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Edital UniLurio - 2024.HF.pdf" class="link-book"> Edital UNIL&Uacute;RIO <button class="button-download">Baixar</button></a></li>
+                    </ul>
+                </div>
+                <h2> Exames de admiss&atilde;o dos anos passados</h2>
+                <h4> UP 2022</h4>
+                <p> Importa saber que os exames de admiss&atilde;o da UP equivalem tamb&eacute;m as outras quatro universidades nomeadamente Unisave, Unipungu&eacute;, Unirovuma e Unilicungo, isto &eacute;, depois de ter baixados estes exames, n&atilde;o ser&aacute; mecess&aacute;rio procurar os das outras universidades, pois, os mesmos correspondem as outras.</p>
+                <div>
+                    <ul class="livros">
+                        <li><a href="ensino superior/port-1-2022.pdf" class="link-book"> Português - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/port-2-2022.pdf" class="link-book"> Português - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/matematica-2022.pdf" class="link-book"> Matem&aacute;tica <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/fisica2022 (1).pdf" class="link-book"> F&iacute;sica <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/biologia-2022.pdf" class="link-book"> Biologia <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/quimica-2022.pdf" class="link-book"> Qu&iacute;mica <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/geografia-2022.pdf" class="link-book"> Geografia <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/ingles-2022.pdf" class="link-book"> Ingl&ecirc; <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/historia-2022.pdf" class="link-book"> Hist&oacute;ria <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/frances-2022.pdf" class="link-book"> Franc&ecirc;s <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/fund-filosofia-2022.pdf" class="link-book"> Filosofia <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/apt-desenho-2022.pdf" class="link-book"> Desenho <button class="button-download">Baixar</button></a></li>
+                    </ul>
+                </div>
+                <h4> UEM 2022</h4>
+                <p> Importa saber que os exames de admiss&atilde;o da UEM equivalem tamb&eacute;m as outras duas universidades nomeadamente Unizambeze e Unil&uacute;rio, isto &eacute;, depois de ter baixados estes exames, n&atilde;o ser&aacute; mecess&aacute;rio procurar os das outras universidades, pois, os mesmos correspondem as outras.</p>
+                <div>
+                    <ul class="livros">
+                        <li><a href="ensino superior/Portugues-1.pdf" class="link-book"> Português - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Portugues-2.pdf" class="link-book"> Português - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Portugues-3.pdf" class="link-book"> Português - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Portugues-4.pdf" class="link-book"> Português - 4 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Matematica-1.pdf" class="link-book"> Matem&aacute;tica - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Matematica-2.pdf" class="link-book"> Matem&aacute;tica - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Matematica-3.pdf" class="link-book"> Matem&aacute;tica - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Fisica-1.pdf" class="link-book"> F&iacute;sica - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Fisica-2.pdf" class="link-book"> F&iacute;sica - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Biologia-1.pdf" class="link-book"> Biologia - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Biologia-2.pdf" class="link-book"> Biologia - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Biologia-3.pdf" class="link-book"> Biologia - 3 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Quimica-1.pdf" class="link-book"> Qu&iacute;mica - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Quimica-2.pdf" class="link-book"> Qu&iacute;mica - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Geografia-1 (1).pdf" class="link-book"> Geografia - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Geografia-1 (1).pdf" class="link-book"> Geografia - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Ingles.pdf" class="link-book"> Ingl&ecirc; <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Historia-1.pdf" class="link-book"> Hist&oacute;ria - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Historia-2.pdf" class="link-book"> Hist&oacute;ria - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Frances.pdf" class="link-book"> Franc&ecirc;s <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Filosofia.pdf" class="link-book"> Filosofia <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Desenho-p1.pdf" class="link-book"> Desenho - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Desenho-p2" class="link-book"> Desenho - 2 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Teatro.pdf" class="link-book"> Teatro <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Musica.pdf" class="link-book"> M&uacute;sica <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Inquerito.pdf" class="link-book"> Inqu&eacute;rito <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Desenho-p1.pdf" class="link-book"> Desenho - 1 <button class="button-download">Baixar</button></a></li>
+                        <li><a href="ensino superior/Desenho-p2.pdf" class="link-book"> Desenho - 2 <button class="button-download">Baixar</button></a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="online">
+            <h2> Prepara&ccedil;&aacute;o para Exame de Admição nas Universidades</h2>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ywSh77vMX0M?si=Vun0CcGxvJ8agNKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>Portugu&ecirc;s IFP, UP, UEM...</h3>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fZr41g43MXQ?si=3whlr9p3Ill3Us--" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>Portugu&ecirc;s IFP, UP, UEM...</h>
+                </div>
+                <h2> Exames Resolvidos</h2>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/knoTbJ1NiPA?si=ErfygWN4p4Qfyj7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>Portugu&ecirc;s - 1 UP 2024</h3>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3SN7fanHR1Y?si=5oXJupPjBtR9ejuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>Portugu&ecirc;s - 2 UP 2024</h3>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cl_2GUMZlg8?si=oESpTaiIDs_hYqqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3>Portugu&ecirc;s ISCISA 2024</h3>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <p>&copy;2024 Educa&ccedil;&atilde;o Mz</p>
+    </footer>
+</body>
+</html>
