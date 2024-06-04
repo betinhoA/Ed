@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Betinho Alberto Dos Santos">
+    <meta name="desription" content="Educa&ccedil;&atilde;o Mz &eacute; uma empresa independente que proporciona o ensino de forma mais pr&aacute;tica para todos.">
+    <meta name="google-adsense-account" content="ca-pub-7583609756869035">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7583609756869035"
+     crossorigin="anonymous"></script>
+    <link rel="icon" type="imagem/jpg"   href="imagem/logo (2).png">
+    <title>Educa&ccedil;&atilde;o Mz</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        header {
+            background-color: rgb(212, 204, 204);
+            height: 20px;
+            border-top-left-radius: 5px;
+        }
+        div.barra {
+            background: blue;
+            width: 100%;
+        }
+        .barra ul {
+            margin: 0;
+            padding: 0;
+            background-color: aquamarine;
+            height: 0vh;
+            transition: 1s;
+        }
+        .barra ul li {
+            list-style-type: none;
+            display: block;
+            padding: 10px;
+        }
+        .barra ul li:hover {
+            background-color:aqua;
+        }
+        .barra ul li:last-child:hover {
+            background: transparent;
+        } 
+        .barra ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        .barra ul li a:hover {
+            color: blue;
+        }
+        .active {
+            background-color: aqua;
+            color: blue;
+        }
+        .botao-1 {
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            width: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+        }
+        .botao-1:focus ~ ul {
+            height: 100vh;
+        }
+        .botao-1, .botao-2 {
+            margin-left: 80%;
+        }
+        .botao-2 {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            width: 60px;
+            font-family: Helvetica;
+            font-weight: bold;
+            border: 1px solid white;
+        }
+        .botao-2:hover {
+            background: yellow;
+            color: red;
+            border: 1px solid red;
+        }
+        main {
+            flex: 1 0 auto;
+            background-color: aqua;
+        }
+        .ensino h2 {
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+        .livros {
+            padding: 0;
+            margin: 0;
+        }
+        .livros li {
+            list-style-type: none;
+            padding: 20px;
+        }
+        .button-download {
+            display: inline-block;
+            background-color: green; 
+            color: #fff; 
+            padding: 10px 20px; 
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 18px; 
+            transition: background-color 0.3s ease;
+        }
+        .button-download:hover {
+            background-color: #45a049; 
+            color: orange;
+        }
+        .button-download:active {
+            background-color: #3e8e41; 
+        }
+        .online h2, .online p, .online iframe, .online h3 {
+            margin-left: 10px;
+        }
+        .video {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: rgb(212, 204, 204);
+            text-align: center;
+        }
+        @media only screen and (max-width:575px) {
+            iframe {
+                width: 320px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <div class="barra">
+            <button class="botao-1">Menu</button>
+            <ul>
+                <li class="active"><a href="index.html" class="active">P&aacute;gina inicial</a></li>
+                <li><a href="ensino_primario.html">Ensino prim&aacute;rio</a></li>
+                <li><a href="ensino_secundario.html">Ensino secund&aacute;rio</a></li>
+                <li><a href="ensino_a_distancia.html">Ensino a dist&acirc;ncia</a></li>
+                <li><a href="ensino_medio.html">Ensino m&eacute;dio</a></li>
+                <li><a href="ensino_superior.html">Ensino superior</li>
+                <li><a href="estado_do_tempo.html">Estado do tempo</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><button class="botao-2">X</button></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="ensino">
+            <h2>Ensino Secund&aacute;rio</h2>
+        </div>
+        <div class="ensino">
+            <h2>Livros da 7&ordf; Classe</h2>
+            <div>
+                <ul class="livros">
+                    <li><a href="FICHA-COMPLETA-MATEMATICA-7a-Classe.pdf" class="link-book"> Matemática <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Ficha-Completa-de-Ingles-7a-Classe.pdf" class="link-book"> Inglês <button class="button-download">Baixar</button></a></li>
+                    <li><a href="FICHA-COMPLETA-DE-PORTUGUES-7a-Classe.pdf" class="link-book"> Portugu&eacute;s <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Ficha-Completa-Geografia-7a-classe.pdf" class="link-book"> Geografia <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Ficha-Completa-de-BIOLOGIA-7aClasse.pdf" class="link-book"> Biologia <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Ficha-Completa-de-Educacao-Visual-7a-Classe.pdf" class="link-book"> Educa&ccedil;&atilde;o Visual <button class="button-download">Baixar</button></a></li>
+                    <li><a href="FICHA-Completa-de-HISTORIA-7a-Classe.pdf" class="link-book"> História <button class="button-download">Baixar</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ensino">
+            <h2>Livros da 8&ordf; Classe</h2>
+            <div>
+                <ul class="livros">
+                    <li><a href="Livro de Matemática 8ª Classe (Textos Editores).pdf" class="link-book"> Matemática <button class="button-download">Baixar</button></a></li>
+                    <li><a href="INGLÊS 8a Classe Final.pdf" class="link-book"> Inglês <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de Portugues 8ª Classe Texto Editores _-_ Marra-la.com.pdf" class="link-book"> Portugu&eacute;s <button class="button-download">Baixar</button></a></li>
+                    <li><a href="EV 8ª classe.pdf" class="link-book"> Educa&ccedil;&atilde;o Visual <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de Biologia - 8ª Classe (Plural Editores).pdf" class="link-book"> Biologia <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Fisica 8a classe (ENM).pdf" class="link-book"> F&iacute;sica <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de Historia 8a Classe.pdf" class="link-book"> História <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de Química 8ª Classe.pdf" class="link-book"> Qu&iacute;mica <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de Geografia 8ª Classe (Textos Editores).pdf" class="link-book"> Geografia<button class="button-download">Baixar</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ensino">
+            <h2>Livros da 9&ordf; Classe</h2>
+            <div>
+                <ul class="livros">
+                    <li><a href="Livro de Matematica 9a classe.pdf" class="link-book"> Matemática <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Português 9a classe (Caderno de Actividades).pdf" class="link-book"> Portugu&eacute;s <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Ed. Visual 9ª.pdf" class="link-book"> Educa&ccedil;&atilde;o Visual <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de Biologia 9ª Classe.pdf" class="link-book"> Biologia <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Fisica 9a classe.pdf" class="link-book"> F&iacute;sica <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de História 9ª Classe.pdf" class="link-book"> História <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de Geografia 9ª Classe.pdf" class="link-book"> Qu&iacute;mica <button class="button-download">Baixar</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ensino">
+            <h2>Livros da 10&ordf; Classe</h2>
+            <div>
+                <ul class="livros">
+                    <li><a href="Matemática 10ª Classe.pdf" class="link-book"> Matemática <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Inglês 10ª Classe (Caderno de Actividades).pdf" class="link-book"> Inglês <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Português 10ª Classe.pdf" class="link-book"> Portugu&eacute;s <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de Educação Visual 10ª Classe.pdf" class="link-book"> Educa&ccedil;&atilde;o Visual <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de Biologia 10ª Classe.pdf" class="link-book"> Biologia <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Fisica 10a Classe.pdf" class="link-book"> F&iacute;sica <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de História 10ª Classe (Texto Editores).pdf" class="link-book"> História <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Química 10ª Classe.pdf" class="link-book"> Qu&iacute;mica <button class="button-download">Baixar</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ensino">
+            <h2>Livros da 11&ordf; Classe</h2>
+            <ul class="livros">
+                <li><a href="Matemática 11ª Classe.pdf" class="link-book"> Matemática <button class="button-download">Baixar</button></a></li>
+                <li><a href="Biologia 11ª Classe.pdf" class="link-book"> Biologia <button class="button-download">Baixar</button></a></li>
+                <li><a href="Física - 11ᵃ Classe -Longman Moç.pdf" class="link-book"> F&iacute;sica <button class="button-download">Baixar</button></a></li>
+                <li><a href="Química 11ª Classe Textos Editores.pdf" class="link-book"> Qu&iacute;mica <button class="button-download">Baixar</button></a></li>
+                <li><a href="Português - 11ᵃ Classe -Longman Moç..pdf" class="link-book"> Português <button class="button-download">Baixar</button></a></li>
+                <li><a href="Geografria 11ª Classe PDF.pdf" class="link-book"> Geografia<button class="button-download">Baixar</button></a></li>
+                <li><a href="Inglês 11ª Classe (Textos Editores).pdf" class="link-book"> Inglês <button class="button-download">Baixar</button></a></li>
+                <li><a href="Tecnologias de Informação e Comunicação (TICs) 11ª classe -Plural Editores.pdf" class="link-book"> TIC'S <button class="button-download">Baixar</button></a></li>
+            </ul>
+        </div>
+        <section class="ensino">
+            <h2>Livros da 12&ordf; Classe</h2>
+            <ul class="livros">
+                <li><a href="Matemática 12ª Classe.pdf" class="link-book"> Matemática <button class="button-download">Baixar</button></a></li>
+                <li><a href="Inglês 12ª Classe (Textos Editores).pdf" class="link-book"> Inglês <button class="button-download">Baixar</button></a></li>
+                <li><a href="Química 12ª Classe.pdf" class="link-book"> Química <button class="button-download">Baixar</button></a></li>
+                <li><a href="my f 12.pdf" class="link-book"> F&iacute;sica <button class="button-download">Baixar</button></a></li>
+                <li><a href="Biologia 12ª Classe.pdf" class="link-book"> Biologia <button class="button-download">Baixar</button></a></li>
+                <li><a href="DGD - 12ª Classe (Texto Editores).pdf" class="link-book"> DGD <button class="button-download">Baixar</button></a></li>
+                <li><a href="My geo 12.pdf" class="link-book"> Geografia <button class="button-download">Baixar</button></a></li>
+                <li><a href="História 12ª Classe (Plural Editores).pdf" class="link-book"> História <button class="button-download">Baixar</button></a></li>
+            </ul>
+        </section>
+        <section class="ensino">
+            <h2>Matrizes 2024</h2>
+            <ul class="livros">
+                <li><a href="MATRIZES 10A CLASSE 2023 FRENTE.pdf" class="link-book"> D&eacute;cima classe frente <button class="button-download">Baixar</button></a></li>
+                <li><a href="MATRIZES 10A CLASSE 2023 VERSO.pdf" class="link-book">D&eacute;cima classe verso <button class="button-download">Baixar</button></a></li>
+                <li><a href="MATRIZES 12A CLASSE 2023 FRENTE.pdf" class="link-book">D&eacute;cima segunda classe frente <button class="button-download">Baixar</button></a></li>
+                <li><a href="MATRIZES 12A CLASSE  2023 VERSO.pdf" class="link-book">D&eacute;cima segunda classe verso <button class="button-download">Baixar</button></a></li>
+            </ul>
+        </section>
+        <section class="ensino">
+            <h2>Exames do ano 2022</h2>
+            <ul class="livros">
+                <li><a href="Matematica_12a Classe_2022-1a Epoca.pdf" class="link-book"> Matem&aacute;tica <button class="button-download">Baixar</button></a></li>
+                <li><a href="Portugues_12a Classe_2022-1a Epoca.pdf" class="link-book">Português <button class="button-download">Baixar</button></a></li>
+            </ul>
+        </section>
+        <section class="ensino">
+            <h2>Fichas de Apoio ao Estudante</h2>
+            <ul class="livros">
+                <li><a href="Tipos de cantigas e suas carateristicas.pdf" class="link-book"> Tipos de Cantigas e suas Caracter&iacute;sticas <button class="button-download">Baixar</button></a></li>
+                <li><a href="Lirirismo portugues.pdf" class="link-book">Lirismo Amoroso - Obras Marcantes <button class="button-download">Baixar</button></a></li>
+            </ul>
+        </section>
+        <div class="online">
+            <h2>Aulas online</h2>
+            <p> Agora &eacute; mais f&aacute;cil estudar em casa com o avan&ccedil;o da tecnologia. </p>
+            <p>Outros v&iacute;deos poder&aacute;s encontrar do nosso <a style="text-decoration: none;" href="https://youtube.com/@EducacaoMz-rn8nh?si=JL2RQgA-WI2Tm5p2">canal</a> no youtube</p>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YQ7AMqo1hiQ?si=sP9G8catD8T4AhJc?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>Elementos do querto grupo da tabela peri&oacute;dica</h3>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d1kPl5Jzgk0?si=6jKr6bNBoTeYzEP4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>Movimento Retil&iacute;neo Uniforme</h3>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XlOg2Hqea5A?si=3QqpdujGT0S0WSoB?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3> O que &eacute; Taxa de Natalidade</h3>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vrfB7tSBjus?si=Zfs-MOA4pgkBnsjV?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>Diferen&ccedil;a entre C&eacute;lula Procariota e Eucariota</h3>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/495TiN0_H8M?si=9SWD3Zm6URqCY6uD?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>Diferen&ccedil;a entre Adjectivo Uniforme e Biforme</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2024 Educa&ccedil;&atilde;o Mz</p>
+    </footer>
+</body>
+</html>

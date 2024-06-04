@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Betinho Alberto Dos Santos">
+    <meta name="desription" content="Educa&ccedil;&atilde;o Mz &eacute; uma empresa independente que proporciona o ensino de forma mais pr&aacute;tica para todos.">
+    <meta name="google-adsense-account" content="ca-pub-7583609756869035">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7583609756869035"
+     crossorigin="anonymous"></script>
+    <link rel="icon" type="imagem/jpg"   href="imagem/logo (2).png">
+    <title>Educa&ccedil;&atilde;o Mz</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        header {
+            background-color: rgb(212, 204, 204);
+            height: 20px;
+            border-top-left-radius: 5px;
+        }
+        div.barra {
+            background: blue;
+            width: 100%;
+        }
+        .barra ul {
+            margin: 0;
+            padding: 0;
+            background-color: aquamarine;
+            height: 0vh;
+            transition: 1s;
+        }
+        .barra ul li {
+            list-style-type: none;
+            display: block;
+            padding: 10px;
+        }
+        .barra ul li:hover {
+            background-color:aqua;
+        }
+        .barra ul li:last-child:hover {
+            background: transparent;
+        } 
+        .barra ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        .barra ul li a:hover {
+            color: blue;
+        }
+        .active {
+            background-color: aqua;
+            color: blue;
+        }
+        .botao-1 {
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            width: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+        }
+        .botao-1:focus ~ ul {
+            height: 100vh;
+        }
+        .botao-1, .botao-2 {
+            margin-left: 80%;
+        }
+        .botao-2 {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            width: 60px;
+            font-family: Helvetica;
+            font-weight: bold;
+            border: 1px solid white;
+        }
+        .botao-2:hover {
+            background: yellow;
+            color: red;
+            border: 1px solid red;
+        }
+        main {
+            flex: 1 0 auto;
+            background-color: aqua;
+        }
+        .ensino h2 {
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+        .livros {
+            padding: 0;
+            margin: 0;
+        }
+        .livros li {
+            list-style-type: none;
+            padding: 20px;
+        }
+        .button-download {
+            display: inline-block;
+            background-color: green; 
+            color: #fff; 
+            padding: 10px 20px; 
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 18px; 
+            transition: background-color 0.3s ease;
+        }
+        .button-download:hover {
+            background-color: #45a049; 
+            color: orange;
+        }
+        .button-download:active {
+            background-color: #3e8e41; 
+        }
+        footer {
+            background-color: rgb(212, 204, 204);
+            text-align: center;
+        }
+        @media only screen and (max-width:575px) {
+            .prof, .logo {
+                max-width: 45%;
+            }
+            .prof:hover, .logo:hover {
+                max-width: 47%;
+            }
+            form {
+                max-width: 75%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <div class="barra">
+            <button class="botao-1">Menu</button>
+            <ul>
+                <li class="active"><a href="index.html" class="active">P&aacute;gina inicial</a></li>
+                <li><a href="ensino_primario.html">Ensino prim&aacute;rio</a></li>
+                <li><a href="ensino_secundario.html">Ensino secund&aacute;rio</a></li>
+                <li><a href="ensino_a_distancia.html">Ensino a dist&acirc;ncia</a></li>
+                <li><a href="ensino_medio.html">Ensino m&eacute;dio</a></li>
+                <li><a href="ensino_superior.html">Ensino superior</li>
+                <li><a href="estado_do_tempo.html">Estado do tempo</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><button class="botao-2">X</button></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="ensino">
+            <h2>Ensino Prim&aacute;rio</h2>
+        </div>
+        <div class="ensino">
+            <h2>Livros da 1&ordf; Classe</h2>
+            <div>
+                <ul class="livros">
+                    <li><a href="Livro de Português 1ª classe (Alcance Editores).pdf" class="link-book">Portugu&ecirc;s <button class="button-download">Baixar</button></a></li>
+                    <li><a href="Livro de Matematica 1ª classe  (Alcance Editores).pdf" class="link-book">Matemática <button class="button-download">Baixar</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ensino">
+            <h2>Livros da 2&ordf; Classe</h2>
+            <ul class="livros">
+                <li><a href="Livro de  Portugues 2ª classe (Alcance Editores).PDF" class="link-book"> Português <button class="button-download">Baixar</button></a></li>
+                <li><a href="Livro de  Matemática 2ª classe (Alcance Editores).pdf" class="link-book"> Matemática <button class="button-download">Baixar</button></a></li>
+            </ul>
+        </div>
+        <section class="ensino">
+            <h2>Livros da 6&ordf; Classe</h2>
+            <ul class="livros">
+                <li><a href="Livro de Português 6ª Classe (MINEDH).PDF" class="link-book"> Português <button class="button-download">Baixar</button></a></li>
+                <li><a href="Livro de Matemática 6ª Classe (MINEDH).pdf" class="link-book"> Matemática <button class="button-download">Baixar</button></a></li>
+                <li><a href="Livro de Ciências Naturais 6ª Classe.pdf" class="link-book"> Ci&ecirc;ncias Naturais <button class="button-download">Baixar</button></a></li>
+                <li><a href="Livro de Educação Visual  6ª Classe.pdf" class="link-book"> Educação Visual e Of&iacute;cios <button class="button-download">Baixar</button></a></li>
+            </ul>
+        </section>
+        <section class="ensino">
+            <h2>Matriz 2024</h2>
+            <ul class="livros">
+                <li><a href="MATRIZRES-6A-CLASSE-2023.pdf" class="link-book"> Sexta Classe <button class="button-download">Baixar</button></a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 Educa&ccedil;&atilde;o Mz</p>
+    </footer>
+</body>
+</html>
